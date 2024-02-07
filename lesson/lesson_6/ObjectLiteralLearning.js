@@ -16,7 +16,8 @@ teo.name = 'Ty';
 teo['my age'] = 22;
 teo.gender = 'M';
 console.log('Update: ', teo);
-
+console.log(teo.hasOwnProperty("name"));
+console.log(teo.abc);
 
 // Delete property
 delete teo["my age"]

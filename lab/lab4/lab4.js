@@ -90,6 +90,9 @@ function withdraw(accountNumber, moneyInput) {
     if (isNaN(moneyInput)) {
         console.log("Your input is not a number. Please input again!");
     }
+    else if(moneyInput < 0){
+        console.log("Your input is invalid. You should input positive number");
+    }
     else {
         if(moneyInput > accountNumber.balance){
             console.log('Current balance is not enough. Please input again!');

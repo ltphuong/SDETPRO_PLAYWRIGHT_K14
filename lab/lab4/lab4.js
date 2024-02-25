@@ -91,7 +91,7 @@ function withdraw(accountNumber, moneyInput) {
         console.log("Your input is not a number. Please input again!");
     }
     else if(moneyInput < 0){
-        console.log("Your input is invalid. You should input positive number");
+        console.log("Your input is invalid. You should input positive number    ");
     }
     else {
         if(moneyInput > accountNumber.balance){

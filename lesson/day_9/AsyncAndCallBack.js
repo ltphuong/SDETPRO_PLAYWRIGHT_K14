@@ -6,7 +6,7 @@
 
 // Asyncronous
 function sendRequest(url, callback){
-    console.log('Send request to ', url);
+    console.log('1. Send request to ', url);
     return setTimeout(function(){
         callback({status: 200});
     }, 1000)

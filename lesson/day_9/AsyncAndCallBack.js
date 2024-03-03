@@ -7,7 +7,7 @@
 // Asyncronous
 function sendRequest(url, callback){
     console.log('1. Send request to ', url);
-    return setTimeout(function(){
+    setTimeout(function(){
         callback({status: 200});
     }, 1000)
 }
@@ -15,7 +15,7 @@ function sendRequest(url, callback){
 // Asyncronous
 function processResponse(response, callback){
     console.log('2. Processing response: ', response);
-    return setTimeout(function(){
+    setTimeout(function(){
         callback(response.status)
     }, 1000)
 }

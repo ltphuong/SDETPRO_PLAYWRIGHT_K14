@@ -25,7 +25,7 @@ class RequestHandler{
     }
 
     // Contruct the returned data as a [Post data modal] from class Post
-    async printAllPosts(url, userId){
+    async getAllPosts(url, userId){
         const allPost = await this._getAllPost(url, userId)
         let allPostArray = []
         for(let i = 0; i < allPost.length; i++){

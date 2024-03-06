@@ -20,7 +20,7 @@ async function lab11(){
     await requestHandler.printTargetPost(targetPost)
 
     // get and print all user post
-    const allPost = await requestHandler.printAllPosts(url, userId)
+    const allPost = await requestHandler.getAllPosts(url, userId)
     console.log('All post: ', allPost);
 }
 

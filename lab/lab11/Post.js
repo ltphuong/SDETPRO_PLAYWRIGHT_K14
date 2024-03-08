@@ -3,7 +3,7 @@ class Post{
         this._userId = userId;
         this._id = id;
         this._title = title;
-        this._body = body
+        this._body = body;
     }
 
     get userId(){

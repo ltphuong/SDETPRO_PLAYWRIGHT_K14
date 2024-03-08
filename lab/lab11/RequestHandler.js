@@ -42,11 +42,13 @@ class RequestHandler{
         }); 
     }
 
-    async _convertResponsetoPostObject(response){
+    async _convertResponsetoPostObject(responsePost){
         const post = new Post();
-        Object.keys(response).forEach(key => 
-            post[key] = response[key]
-        );
+        Object.keys(responsePost).forEach(key => {
+            if(post.hasOwnProperty(`_${key}`)){
+                post[key] = responsePost[key]
+            }   
+        });
         return post;
     }
 }

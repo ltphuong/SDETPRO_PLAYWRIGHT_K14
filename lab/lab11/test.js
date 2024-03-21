@@ -4,7 +4,7 @@ const RequestHandler = require('./RequestHandler')
 // Execution
 lab11();
 
-async function lab11(){
+async function lab11() {
     const responsePost = {
         name: "ti",
         id: 2,
@@ -15,7 +15,7 @@ async function lab11(){
 
     const post = new Post();
     Object.keys(responsePost).forEach(key => {
-        if(post.hasOwnProperty(`_${key}`)){
+        if (post.hasOwnProperty(`_${key}`)) {
             console.log('test1');
             post[key] = responsePost[key]
         }

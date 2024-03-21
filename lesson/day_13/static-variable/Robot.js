@@ -2,7 +2,7 @@ class Robot {
     static id = 0;
 
     constructor() {
-        this.name = 'Robot';
+        this.sth = 'Robot';
         Robot.id++;
     }
 
@@ -11,7 +11,7 @@ class Robot {
     }
 
     static doSthing() {
-        console.log('Hello. My name is ', this.name);
+        console.log('Hello. My name is ', this.sth);
     }
 }
 
